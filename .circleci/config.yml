@@ -1,0 +1,97 @@
+version: 2
+common: &common
+  machine:
+    docker_layer_caching: false 
+  working_directory: ~/cogeo-layer
+  steps:
+    - checkout
+    - attach_workspace:
+        at: ~/cogeo-layer
+    
+    - run: echo "$DOCKER_PASS" | docker login --username $DOCKER_USER --password-stdin
+    
+    - run:
+        name: create and push python images 
+        command: |
+          for PYTHON_VERSION in ${PYTHON_VERSIONS}; do
+
+            docker build --build-arg GDAL_VERSION=${GDAL_VERSION} --build-arg PYTHON_VERSION=${PYTHON_VERSION} -t geo .
+
+            docker run --name lambda -w /var/task --volume $(pwd)/:/local -itd geo bash
+            docker exec -it lambda bash '/local/scripts/create-lambda-layer.sh'	
+            docker cp lambda:/tmp/package.zip gdal${GDAL_VERSION}-py${PYTHON_VERSION}-geo.zip
+            docker stop lambda
+            docker rm lambda
+
+            if [[ "$CIRCLE_BRANCH" == "master" ]]; then
+              docker tag geo lambgeo/lambda:gdal${GDAL_VERSION}-py${PYTHON_VERSION}-geo
+              docker push lambgeo/lambda:gdal${GDAL_VERSION}-py${PYTHON_VERSION}-geo
+            fi
+
+          done
+
+    - persist_to_workspace:
+        root: .
+        paths:
+          - gdal*-geo.zip
+
+jobs:
+  "gdal-3.1":
+    <<: *common
+    environment:
+      - GDAL_VERSION=3.0
+      - PYTHON_VERSIONS=3.7 3.8
+
+  "gdal-3.0":
+    <<: *common
+    environment:
+      - GDAL_VERSION=3.0
+      - PYTHON_VERSIONS=3.7 3.8
+
+  "gdal-2.4":
+    <<: *common
+    environment:
+      - GDAL_VERSION=2.4
+      - PYTHON_VERSIONS=3.7 3.8
+
+  deploy:
+    docker:
+      - image: circleci/python:3.7.2
+        environment:
+          - GDAL_VERSIONS=2.4 3.0 3.1
+          - PYTHON_VERSIONS=3.7 3.8
+    working_directory: ~/geo-layer
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/geo-layer
+      - run:
+          name: install cmd
+          command: |
+            sudo apt-get install jq
+            sudo pip install boto3 click
+      - run:
+          name: Deploy Layer
+          command: |
+            for GDAL_VERSION in ${GDAL_VERSIONS}; do
+              for PYTHON_VERSION in ${PYTHON_VERSIONS}; do
+                python scripts/deploy-layer.py ${GDAL_VERSION} ${PYTHON_VERSION} geo
+              done
+            done
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - "gdal-3.1"
+      - "gdal-3.0"
+      - "gdal-2.4"    
+      - deploy:
+          requires:
+            - "gdal-3.1"
+            - "gdal-3.0"
+            - "gdal-2.4"
+          filters:
+            branches:
+              only:
+                - master

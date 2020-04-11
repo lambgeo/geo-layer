@@ -1,0 +1,8 @@
+numpy
+
+pygeos
+shapely
+rasterio>=1.1.3
+
+mercantile
+supermercado

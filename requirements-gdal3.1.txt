@@ -1,0 +1,9 @@
+numpy
+
+pygeos
+shapely
+rasterio>=1.1.3
+pyproj==2.4.1
+
+mercantile
+supermercado

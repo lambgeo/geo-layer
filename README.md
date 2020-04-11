@@ -29,13 +29,13 @@ supermercado
 
 gdal | version | size (Mb)| unzipped size (Mb)| arn
   ---|      ---|       ---|                ---| ---
-3.1  |        1|        24|               61.7| arn:aws:lambda:us-east-1:524387336408:layer:gdal31-py37-geo:1
-3.0  |        1|        23|               58.5| arn:aws:lambda:us-east-1:524387336408:layer:gdal30-py37-geo:1
-2.4  |        1|      14.8|               48.6| arn:aws:lambda:us-east-1:524387336408:layer:gdal24-py37-geo:1
+3.1  |        1|          |                   | arn:aws:lambda:us-east-1:524387336408:layer:gdal31-py37-geo:1
+3.0  |        1|          |                   | arn:aws:lambda:us-east-1:524387336408:layer:gdal30-py37-geo:1
+2.4  |        1|      34.5|              114.9| arn:aws:lambda:us-east-1:524387336408:layer:gdal24-py37-geo:1
   ---|      ---|       ---|                ---| ---
-3.1  |        1|        24|               61.7| arn:aws:lambda:us-east-1:524387336408:layer:gdal31-py38-geo:1
-3.0  |        1|        23|               58.5| arn:aws:lambda:us-east-1:524387336408:layer:gdal30-py38-geo:1
-2.4  |        1|      14.8|               48.6| arn:aws:lambda:us-east-1:524387336408:layer:gdal24-py38-geo:1
+3.1  |        1|          |                   | arn:aws:lambda:us-east-1:524387336408:layer:gdal31-py38-geo:1
+3.0  |        1|          |                   | arn:aws:lambda:us-east-1:524387336408:layer:gdal30-py38-geo:1
+2.4  |        1|      35.7|              128.8| arn:aws:lambda:us-east-1:524387336408:layer:gdal24-py38-geo:1
 
 ## How To
 

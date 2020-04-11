@@ -16,6 +16,7 @@ echo "Remove useless files"
 rm -rdf $PREFIX/share/doc \
 && rm -rdf $PREFIX/share/man \
 && rm -rdf $PREFIX/share/hdf*
+find $PREFIX/python -type d -a -name 'tests' -print0 | xargs -0 rm -rf
 
 echo "Remove uncompiled python scripts"
 find $PREFIX/python -type f -name '*.pyc' | while read f; do n=$(echo $f | sed 's/__pycache__\///' | sed 's/.cpython-[2-3][0-9]//'); cp $f $n; done;

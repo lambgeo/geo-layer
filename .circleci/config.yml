@@ -33,7 +33,7 @@ common: &common
     - persist_to_workspace:
         root: .
         paths:
-          - gdal*-geo.zip
+          - gdal*-geolayer.zip
 
 jobs:
   "gdal-3.1":

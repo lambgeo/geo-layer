@@ -4,6 +4,7 @@ import click
 import hashlib
 
 from boto3.session import Session as boto3_session
+from botocore.client import Config
 
 AWS_REGIONS = [
     "eu-central-1",
@@ -38,11 +39,14 @@ def main(gdalversion, pythonversion, layername):
 
     session = boto3_session()
 
+    # Increase connection timeout to work around timeout errors
+    config = Config(connect_timeout=6000, retries={'max_attempts': 5})
+
     click.echo(f"Deploying {layer_name}", err=True)
     for region in AWS_REGIONS:
         click.echo(f"AWS Region: {region}", err=True)
 
-        client = session.client("lambda", region_name=region)
+        client = session.client("lambda", region_name=region, config=config)
 
         res = client.list_layer_versions(
             CompatibleRuntime=runtime, LayerName=layer_name

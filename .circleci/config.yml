@@ -15,17 +15,17 @@ common: &common
         command: |
           for PYTHON_VERSION in ${PYTHON_VERSIONS}; do
 
-            docker build --build-arg GDAL_VERSION=${GDAL_VERSION} --build-arg PYTHON_VERSION=${PYTHON_VERSION} -t geo .
+            docker build --build-arg GDAL_VERSION=${GDAL_VERSION} --build-arg PYTHON_VERSION=${PYTHON_VERSION} -t geolayer .
 
-            docker run --name lambda -w /var/task --volume $(pwd)/:/local -itd geo bash
+            docker run --name lambda -w /var/task --volume $(pwd)/:/local -itd geolayer bash
             docker exec -it lambda bash '/local/scripts/create-lambda-layer.sh'	
-            docker cp lambda:/tmp/package.zip gdal${GDAL_VERSION}-py${PYTHON_VERSION}-geo.zip
+            docker cp lambda:/tmp/package.zip gdal${GDAL_VERSION}-py${PYTHON_VERSION}-geolayer.zip
             docker stop lambda
             docker rm lambda
 
             if [[ "$CIRCLE_BRANCH" == "master" ]]; then
-              docker tag geo lambgeo/lambda:gdal${GDAL_VERSION}-py${PYTHON_VERSION}-geo
-              docker push lambgeo/lambda:gdal${GDAL_VERSION}-py${PYTHON_VERSION}-geo
+              docker tag geolayer lambgeo/lambda:gdal${GDAL_VERSION}-py${PYTHON_VERSION}-geolayer
+              docker push lambgeo/lambda:gdal${GDAL_VERSION}-py${PYTHON_VERSION}-geolayer
             fi
 
           done
@@ -33,7 +33,7 @@ common: &common
     - persist_to_workspace:
         root: .
         paths:
-          - gdal*-geo.zip
+          - gdal*-geolayer.zip
 
 jobs:
   "gdal-3.1":
@@ -75,7 +75,7 @@ jobs:
           command: |
             for GDAL_VERSION in ${GDAL_VERSIONS}; do
               for PYTHON_VERSION in ${PYTHON_VERSIONS}; do
-                python scripts/deploy-layer.py ${GDAL_VERSION} ${PYTHON_VERSION} geo
+                python scripts/deploy-layer.py ${GDAL_VERSION} ${PYTHON_VERSION} geolayer
               done
             done
 

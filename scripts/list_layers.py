@@ -4,12 +4,12 @@ from boto3.session import Session as boto3_session
 
 regions = ["us-east-1", "us-east-2", "us-west-1", "us-west-2", "eu-central-1"]
 layers = [
-    "gdal24-py37-geo",
-    "gdal30-py37-geo",
-    "gdal31-py37-geo",
-    "gdal24-py38-geo",
-    "gdal30-py38-geo",
-    "gdal31-py38-geo",
+    "gdal24-py37-geolayer",
+    "gdal30-py37-geolayer",
+    "gdal31-py37-geolayer",
+    "gdal24-py38-geolayer",
+    "gdal30-py38-geolayer",
+    "gdal31-py38-geolayer",
 ]
 
 

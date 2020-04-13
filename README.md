@@ -16,7 +16,7 @@ supermercado
 
 #### Arns
 
-`arn:aws:lambda:{REGION}:524387336408:layer:gdal{GDAL_VERSION_NODOT}-py{PYTHON_VERSION_NODOT}-geo:{LAYER_VERSION}`
+`arn:aws:lambda:{REGION}:524387336408:layer:gdal{GDAL_VERSION_NODOT}-py{PYTHON_VERSION_NODOT}-geolayer:{LAYER_VERSION}`
 
 #### Regions
 - us-east-1
@@ -29,13 +29,13 @@ supermercado
 
 gdal | version | size (Mb)| unzipped size (Mb)| arn
   ---|      ---|       ---|                ---| ---
-3.1  |        1|          |                   | arn:aws:lambda:us-east-1:524387336408:layer:gdal31-py37-geo:1
-3.0  |        1|          |                   | arn:aws:lambda:us-east-1:524387336408:layer:gdal30-py37-geo:1
-2.4  |        1|      34.5|              114.9| arn:aws:lambda:us-east-1:524387336408:layer:gdal24-py37-geo:1
+3.1  |        1|      44.8|              131.7| arn:aws:lambda:{REGION}:524387336408:layer:gdal31-py37-geolayer:1
+3.0  |        1|      43.8|              128.5| arn:aws:lambda:{REGION}:524387336408:layer:gdal30-py37-geolayer:1
+2.4  |        1|      34.5|              114.9| arn:aws:lambda:{REGION}:524387336408:layer:gdal24-py37-geolayer:1
   ---|      ---|       ---|                ---| ---
-3.1  |        1|          |                   | arn:aws:lambda:us-east-1:524387336408:layer:gdal31-py38-geo:1
-3.0  |        1|          |                   | arn:aws:lambda:us-east-1:524387336408:layer:gdal30-py38-geo:1
-2.4  |        1|      35.7|              128.8| arn:aws:lambda:us-east-1:524387336408:layer:gdal24-py38-geo:1
+3.1  |        1|      46.2|                147| arn:aws:lambda:{REGION}:524387336408:layer:gdal31-py38-geolayer:1
+3.0  |        1|      45.2|              143.8| arn:aws:lambda:{REGION}:524387336408:layer:gdal30-py38-geolayer:1
+2.4  |        1|      35.7|              128.8| arn:aws:lambda:{REGION}:524387336408:layer:gdal24-py38-geolayer:1
 
 ## How To
 
@@ -51,7 +51,7 @@ zip -r9q /tmp/package.zip handler.py
 
 - Create a docker file
 ```dockerfile
-FROM lambgeo/lambda:gdal3.0-py3.7-geo
+FROM lambgeo/lambda:gdal3.0-py3.7-geolayer
 
 ENV PYTHONUSERBASE=/var/task
 
@@ -75,7 +75,7 @@ docker stop lambda
 docker rm lambda
 ```
 
-### Create new lambda layer
+## Create new lambda layer
 
 ```bash
 docker build --tag package:latest . --build-arg GDAL_VERSION=2.4 --build-arg PYTHON_VERSION=3.7
@@ -90,10 +90,10 @@ docker rm lambda
 ### Publish layer
 
 ```bash
-# cp package.zip gdal3.0-py3.7-geo.zip
-cp package.zip gdal2.4-py3.7-geo.zip
+# cp package.zip gdal3.0-py3.7-geolayer.zip
+cp package.zip gdal2.4-py3.7-geolayer.zip
 # gdal version, python version, layer name
-python scripts/deploy-layer.py "2.4" "3.7"  "geo"
+python scripts/deploy-layer.py "2.4" "3.7"  "geolayer"
 ```
 
 List ARNs

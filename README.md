@@ -49,7 +49,7 @@ zip -r9q /tmp/package.zip handler.py
 
 #### Complex (dependencies)
 
-- Create a docker file 
+- Create a docker file
 ```dockerfile
 FROM lambgeo/lambda:gdal3.0-py3.7-geo
 
@@ -64,7 +64,7 @@ RUN rm -rf ${PYTHONUSERBASE}/lib
 
 echo "Create archive"
 RUN cd $PYTHONUSERBASE && zip -r9q /tmp/package.zip *
-``` 
+```
 
 - create package
 ```bash
@@ -73,4 +73,31 @@ docker run --name lambda -w /var/task -itd package:latest bash
 docker cp lambda:/tmp/package.zip package.zip
 docker stop lambda
 docker rm lambda
+```
+
+### Create new lambda layer
+
+```bash
+docker build --tag package:latest . --build-arg GDAL_VERSION=2.4 --build-arg PYTHON_VERSION=3.7
+docker run --name lambda -w /var/task -itd package:latest bash
+docker cp scripts/create-lambda-layer.sh lambda:/create-lambda-layer.sh
+docker exec -it lambda bash /create-lambda-layer.sh
+docker cp lambda:/tmp/package.zip package.zip
+docker stop lambda
+docker rm lambda
+```
+
+### Publish layer
+
+```bash
+# cp package.zip gdal3.0-py3.7-geo.zip
+cp package.zip gdal2.4-py3.7-geo.zip
+# gdal version, python version, layer name
+python scripts/deploy-layer.py "2.4" "3.7"  "geo"
+```
+
+List ARNs
+
+```bash
+python scripts/list_layers.py > arns.json
 ```

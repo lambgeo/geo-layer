@@ -23,7 +23,7 @@ common: &common
             docker stop lambda
             docker rm lambda
 
-            if [[ -z "${CIRCLE_TAG}" ]]; then
+            if [[ -n "${CIRCLE_TAG}" ]]; then
               docker tag geolayer lambgeo/lambda:gdal${GDAL_VERSION}-py${PYTHON_VERSION}-geolayer
               docker push lambgeo/lambda:gdal${GDAL_VERSION}-py${PYTHON_VERSION}-geolayer
             fi

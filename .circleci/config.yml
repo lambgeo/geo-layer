@@ -23,7 +23,7 @@ common: &common
             docker stop lambda
             docker rm lambda
 
-            if [[ "$CIRCLE_BRANCH" == "master" ]]; then
+            if [[ -z "${CIRCLE_TAG}" ]]; then
               docker tag geolayer lambgeo/lambda:gdal${GDAL_VERSION}-py${PYTHON_VERSION}-geolayer
               docker push lambgeo/lambda:gdal${GDAL_VERSION}-py${PYTHON_VERSION}-geolayer
             fi
@@ -84,14 +84,24 @@ workflows:
   build_and_deploy:
     jobs:
       - "gdal-3.1"
-      - "gdal-3.0"
-      - "gdal-2.4"    
+          filters:  # required since `deploy` has tag filters AND requires `build`
+            tags:
+              only: /.*/
+      - "gdal-3.0":
+          filters:  # required since `deploy` has tag filters AND requires `build`
+            tags:
+              only: /.*/
+      - "gdal-2.4":
+          filters:  # required since `deploy` has tag filters AND requires `build`
+            tags:
+              only: /.*/
       - deploy:
           requires:
             - "gdal-3.1"
             - "gdal-3.0"
             - "gdal-2.4"
           filters:
+            tags:
+              only: /^[0-9]+.*/
             branches:
-              only:
-                - master
+              ignore: /.*/

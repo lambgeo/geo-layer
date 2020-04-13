@@ -7,3 +7,7 @@ pyproj==2.4.1
 
 mercantile
 supermercado
+
+# HACK, those package are in the docker image but not in the lambda env
+requests
+pyyaml

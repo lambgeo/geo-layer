@@ -6,3 +6,7 @@ rasterio>=1.1.3
 
 mercantile
 supermercado
+
+# HACK, those package are in the docker image but not in the lambda env
+requests
+pyyaml

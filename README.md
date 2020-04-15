@@ -17,6 +17,8 @@ requests
 pyyaml
 ```
 
+For now only python 3.7 layers are available.
+
 #### Arns
 
 `arn:aws:lambda:{REGION}:524387336408:layer:gdal{GDAL_VERSION_NODOT}-py{PYTHON_VERSION_NODOT}-geolayer:{LAYER_VERSION}`
@@ -35,10 +37,6 @@ gdal | version | size (Mb)| unzipped size (Mb)| arn
 3.1  |        1|      44.8|              131.7| arn:aws:lambda:{REGION}:524387336408:layer:gdal31-py37-geolayer:1
 3.0  |        1|      43.8|              128.5| arn:aws:lambda:{REGION}:524387336408:layer:gdal30-py37-geolayer:1
 2.4  |        1|      34.5|              114.9| arn:aws:lambda:{REGION}:524387336408:layer:gdal24-py37-geolayer:1
-  ---|      ---|       ---|                ---| ---
-3.1  |        1|      46.2|                147| arn:aws:lambda:{REGION}:524387336408:layer:gdal31-py38-geolayer:1
-3.0  |        1|      45.2|              143.8| arn:aws:lambda:{REGION}:524387336408:layer:gdal30-py38-geolayer:1
-2.4  |        1|      35.7|              128.8| arn:aws:lambda:{REGION}:524387336408:layer:gdal24-py38-geolayer:1
 
 ## How To
 

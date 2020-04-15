@@ -12,6 +12,9 @@ rasterio>=1.1.3
 pyproj==2.4.1 (only with GDAL >=3.0)
 mercantile
 supermercado
+
+requests
+pyyaml
 ```
 
 #### Arns

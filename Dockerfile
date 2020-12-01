@@ -1,13 +1,12 @@
-ARG GDAL_VERSION
-ARG PYTHON_VERSION
-FROM lambgeo/lambda:gdal${GDAL_VERSION}-py${PYTHON_VERSION}
+ARG VERSION
+ARG RUNTIME
 
-ARG GDAL_VERSION
-ENV GDAL_VERSION $GDAL_VERSION
+FROM lambgeo/lambda-gdal:${VERSION}-${RUNTIME}
 
-RUN pip install cython==0.28 --no-cache-dir
+ARG VERSION
+ENV VERSION $VERSION
 
-COPY requirements-gdal${GDAL_VERSION}.txt requirements.txt
+COPY requirements-gdal${VERSION}.txt requirements.txt
 RUN pip install -r requirements.txt --no-cache-dir --no-binary :all: -t $PREFIX/python
 RUN rm requirements.txt
 

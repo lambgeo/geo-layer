@@ -28,6 +28,8 @@ cd $PREFIX && find lib -name \*.so\* -exec strip {} \;
 
 echo "Create archives"
 cd $PREFIX && zip -r9q /tmp/package.zip python
-cd $PREFIX && zip -r9q --symlinks /tmp/package.zip lib/*.so* 
+cd $PREFIX && zip -r9q --symlinks /tmp/package.zip lib/*.so*
 cd $PREFIX && zip -r9q --symlinks /tmp/package.zip share
 cd $PREFIX && zip -r9q --symlinks /tmp/package.zip bin/gdal* bin/ogr* bin/geos* bin/nearblack
+
+cp /tmp/package.zip /local/package.zip

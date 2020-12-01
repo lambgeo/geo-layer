@@ -2,20 +2,37 @@
 import json
 from boto3.session import Session as boto3_session
 
-regions = ["us-east-1", "us-east-2", "us-west-1", "us-west-2", "eu-central-1"]
+AWS_REGIONS = [
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
 layers = [
-    "gdal24-py37-geolayer",
-    "gdal30-py37-geolayer",
-    "gdal31-py37-geolayer",
-    "gdal24-py38-geolayer",
-    "gdal30-py38-geolayer",
-    "gdal31-py38-geolayer",
+    "gdal24-python37-geo",
+    "gdal31-python37-geo",
+    "gdal32-python37-geo",
+    "gdal24-python38-geo",
+    "gdal31-python38-geo",
+    "gdal32-python38-geo",
 ]
 
 
 def main():
     results = []
-    for region in regions:
+    for region in AWS_REGIONS:
         res = {"region": region, "layers": []}
 
         session = boto3_session(region_name=region)

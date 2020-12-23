@@ -4,33 +4,33 @@
         "layers": [
             {
                 "name": "gdal24-python37-geo",
-                "arn": "arn:aws:lambda:ap-northeast-1:524387336408:layer:gdal24-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-northeast-1:524387336408:layer:gdal24-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python37-geo",
-                "arn": "arn:aws:lambda:ap-northeast-1:524387336408:layer:gdal31-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-northeast-1:524387336408:layer:gdal31-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python37-geo",
-                "arn": "arn:aws:lambda:ap-northeast-1:524387336408:layer:gdal32-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-northeast-1:524387336408:layer:gdal32-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal24-python38-geo",
-                "arn": "arn:aws:lambda:ap-northeast-1:524387336408:layer:gdal24-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-northeast-1:524387336408:layer:gdal24-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python38-geo",
-                "arn": "arn:aws:lambda:ap-northeast-1:524387336408:layer:gdal31-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-northeast-1:524387336408:layer:gdal31-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python38-geo",
-                "arn": "arn:aws:lambda:ap-northeast-1:524387336408:layer:gdal32-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-northeast-1:524387336408:layer:gdal32-python38-geo:2",
+                "version": 2
             }
         ]
     },
@@ -39,33 +39,33 @@
         "layers": [
             {
                 "name": "gdal24-python37-geo",
-                "arn": "arn:aws:lambda:ap-northeast-2:524387336408:layer:gdal24-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-northeast-2:524387336408:layer:gdal24-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python37-geo",
-                "arn": "arn:aws:lambda:ap-northeast-2:524387336408:layer:gdal31-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-northeast-2:524387336408:layer:gdal31-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python37-geo",
-                "arn": "arn:aws:lambda:ap-northeast-2:524387336408:layer:gdal32-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-northeast-2:524387336408:layer:gdal32-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal24-python38-geo",
-                "arn": "arn:aws:lambda:ap-northeast-2:524387336408:layer:gdal24-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-northeast-2:524387336408:layer:gdal24-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python38-geo",
-                "arn": "arn:aws:lambda:ap-northeast-2:524387336408:layer:gdal31-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-northeast-2:524387336408:layer:gdal31-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python38-geo",
-                "arn": "arn:aws:lambda:ap-northeast-2:524387336408:layer:gdal32-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-northeast-2:524387336408:layer:gdal32-python38-geo:2",
+                "version": 2
             }
         ]
     },
@@ -74,33 +74,33 @@
         "layers": [
             {
                 "name": "gdal24-python37-geo",
-                "arn": "arn:aws:lambda:ap-south-1:524387336408:layer:gdal24-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-south-1:524387336408:layer:gdal24-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python37-geo",
-                "arn": "arn:aws:lambda:ap-south-1:524387336408:layer:gdal31-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-south-1:524387336408:layer:gdal31-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python37-geo",
-                "arn": "arn:aws:lambda:ap-south-1:524387336408:layer:gdal32-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-south-1:524387336408:layer:gdal32-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal24-python38-geo",
-                "arn": "arn:aws:lambda:ap-south-1:524387336408:layer:gdal24-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-south-1:524387336408:layer:gdal24-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python38-geo",
-                "arn": "arn:aws:lambda:ap-south-1:524387336408:layer:gdal31-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-south-1:524387336408:layer:gdal31-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python38-geo",
-                "arn": "arn:aws:lambda:ap-south-1:524387336408:layer:gdal32-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-south-1:524387336408:layer:gdal32-python38-geo:2",
+                "version": 2
             }
         ]
     },
@@ -109,33 +109,33 @@
         "layers": [
             {
                 "name": "gdal24-python37-geo",
-                "arn": "arn:aws:lambda:ap-southeast-1:524387336408:layer:gdal24-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-southeast-1:524387336408:layer:gdal24-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python37-geo",
-                "arn": "arn:aws:lambda:ap-southeast-1:524387336408:layer:gdal31-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-southeast-1:524387336408:layer:gdal31-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python37-geo",
-                "arn": "arn:aws:lambda:ap-southeast-1:524387336408:layer:gdal32-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-southeast-1:524387336408:layer:gdal32-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal24-python38-geo",
-                "arn": "arn:aws:lambda:ap-southeast-1:524387336408:layer:gdal24-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-southeast-1:524387336408:layer:gdal24-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python38-geo",
-                "arn": "arn:aws:lambda:ap-southeast-1:524387336408:layer:gdal31-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-southeast-1:524387336408:layer:gdal31-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python38-geo",
-                "arn": "arn:aws:lambda:ap-southeast-1:524387336408:layer:gdal32-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-southeast-1:524387336408:layer:gdal32-python38-geo:2",
+                "version": 2
             }
         ]
     },
@@ -144,33 +144,33 @@
         "layers": [
             {
                 "name": "gdal24-python37-geo",
-                "arn": "arn:aws:lambda:ap-southeast-2:524387336408:layer:gdal24-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-southeast-2:524387336408:layer:gdal24-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python37-geo",
-                "arn": "arn:aws:lambda:ap-southeast-2:524387336408:layer:gdal31-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-southeast-2:524387336408:layer:gdal31-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python37-geo",
-                "arn": "arn:aws:lambda:ap-southeast-2:524387336408:layer:gdal32-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-southeast-2:524387336408:layer:gdal32-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal24-python38-geo",
-                "arn": "arn:aws:lambda:ap-southeast-2:524387336408:layer:gdal24-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-southeast-2:524387336408:layer:gdal24-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python38-geo",
-                "arn": "arn:aws:lambda:ap-southeast-2:524387336408:layer:gdal31-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-southeast-2:524387336408:layer:gdal31-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python38-geo",
-                "arn": "arn:aws:lambda:ap-southeast-2:524387336408:layer:gdal32-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ap-southeast-2:524387336408:layer:gdal32-python38-geo:2",
+                "version": 2
             }
         ]
     },
@@ -179,33 +179,33 @@
         "layers": [
             {
                 "name": "gdal24-python37-geo",
-                "arn": "arn:aws:lambda:ca-central-1:524387336408:layer:gdal24-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ca-central-1:524387336408:layer:gdal24-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python37-geo",
-                "arn": "arn:aws:lambda:ca-central-1:524387336408:layer:gdal31-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ca-central-1:524387336408:layer:gdal31-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python37-geo",
-                "arn": "arn:aws:lambda:ca-central-1:524387336408:layer:gdal32-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ca-central-1:524387336408:layer:gdal32-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal24-python38-geo",
-                "arn": "arn:aws:lambda:ca-central-1:524387336408:layer:gdal24-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ca-central-1:524387336408:layer:gdal24-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python38-geo",
-                "arn": "arn:aws:lambda:ca-central-1:524387336408:layer:gdal31-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ca-central-1:524387336408:layer:gdal31-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python38-geo",
-                "arn": "arn:aws:lambda:ca-central-1:524387336408:layer:gdal32-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:ca-central-1:524387336408:layer:gdal32-python38-geo:2",
+                "version": 2
             }
         ]
     },
@@ -214,33 +214,33 @@
         "layers": [
             {
                 "name": "gdal24-python37-geo",
-                "arn": "arn:aws:lambda:eu-central-1:524387336408:layer:gdal24-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-central-1:524387336408:layer:gdal24-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python37-geo",
-                "arn": "arn:aws:lambda:eu-central-1:524387336408:layer:gdal31-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-central-1:524387336408:layer:gdal31-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python37-geo",
-                "arn": "arn:aws:lambda:eu-central-1:524387336408:layer:gdal32-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-central-1:524387336408:layer:gdal32-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal24-python38-geo",
-                "arn": "arn:aws:lambda:eu-central-1:524387336408:layer:gdal24-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-central-1:524387336408:layer:gdal24-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python38-geo",
-                "arn": "arn:aws:lambda:eu-central-1:524387336408:layer:gdal31-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-central-1:524387336408:layer:gdal31-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python38-geo",
-                "arn": "arn:aws:lambda:eu-central-1:524387336408:layer:gdal32-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-central-1:524387336408:layer:gdal32-python38-geo:2",
+                "version": 2
             }
         ]
     },
@@ -249,33 +249,33 @@
         "layers": [
             {
                 "name": "gdal24-python37-geo",
-                "arn": "arn:aws:lambda:eu-north-1:524387336408:layer:gdal24-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-north-1:524387336408:layer:gdal24-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python37-geo",
-                "arn": "arn:aws:lambda:eu-north-1:524387336408:layer:gdal31-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-north-1:524387336408:layer:gdal31-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python37-geo",
-                "arn": "arn:aws:lambda:eu-north-1:524387336408:layer:gdal32-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-north-1:524387336408:layer:gdal32-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal24-python38-geo",
-                "arn": "arn:aws:lambda:eu-north-1:524387336408:layer:gdal24-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-north-1:524387336408:layer:gdal24-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python38-geo",
-                "arn": "arn:aws:lambda:eu-north-1:524387336408:layer:gdal31-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-north-1:524387336408:layer:gdal31-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python38-geo",
-                "arn": "arn:aws:lambda:eu-north-1:524387336408:layer:gdal32-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-north-1:524387336408:layer:gdal32-python38-geo:2",
+                "version": 2
             }
         ]
     },
@@ -284,33 +284,33 @@
         "layers": [
             {
                 "name": "gdal24-python37-geo",
-                "arn": "arn:aws:lambda:eu-west-1:524387336408:layer:gdal24-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-west-1:524387336408:layer:gdal24-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python37-geo",
-                "arn": "arn:aws:lambda:eu-west-1:524387336408:layer:gdal31-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-west-1:524387336408:layer:gdal31-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python37-geo",
-                "arn": "arn:aws:lambda:eu-west-1:524387336408:layer:gdal32-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-west-1:524387336408:layer:gdal32-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal24-python38-geo",
-                "arn": "arn:aws:lambda:eu-west-1:524387336408:layer:gdal24-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-west-1:524387336408:layer:gdal24-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python38-geo",
-                "arn": "arn:aws:lambda:eu-west-1:524387336408:layer:gdal31-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-west-1:524387336408:layer:gdal31-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python38-geo",
-                "arn": "arn:aws:lambda:eu-west-1:524387336408:layer:gdal32-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-west-1:524387336408:layer:gdal32-python38-geo:2",
+                "version": 2
             }
         ]
     },
@@ -319,33 +319,33 @@
         "layers": [
             {
                 "name": "gdal24-python37-geo",
-                "arn": "arn:aws:lambda:eu-west-2:524387336408:layer:gdal24-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-west-2:524387336408:layer:gdal24-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python37-geo",
-                "arn": "arn:aws:lambda:eu-west-2:524387336408:layer:gdal31-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-west-2:524387336408:layer:gdal31-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python37-geo",
-                "arn": "arn:aws:lambda:eu-west-2:524387336408:layer:gdal32-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-west-2:524387336408:layer:gdal32-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal24-python38-geo",
-                "arn": "arn:aws:lambda:eu-west-2:524387336408:layer:gdal24-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-west-2:524387336408:layer:gdal24-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python38-geo",
-                "arn": "arn:aws:lambda:eu-west-2:524387336408:layer:gdal31-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-west-2:524387336408:layer:gdal31-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python38-geo",
-                "arn": "arn:aws:lambda:eu-west-2:524387336408:layer:gdal32-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-west-2:524387336408:layer:gdal32-python38-geo:2",
+                "version": 2
             }
         ]
     },
@@ -354,33 +354,33 @@
         "layers": [
             {
                 "name": "gdal24-python37-geo",
-                "arn": "arn:aws:lambda:eu-west-3:524387336408:layer:gdal24-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-west-3:524387336408:layer:gdal24-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python37-geo",
-                "arn": "arn:aws:lambda:eu-west-3:524387336408:layer:gdal31-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-west-3:524387336408:layer:gdal31-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python37-geo",
-                "arn": "arn:aws:lambda:eu-west-3:524387336408:layer:gdal32-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-west-3:524387336408:layer:gdal32-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal24-python38-geo",
-                "arn": "arn:aws:lambda:eu-west-3:524387336408:layer:gdal24-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-west-3:524387336408:layer:gdal24-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python38-geo",
-                "arn": "arn:aws:lambda:eu-west-3:524387336408:layer:gdal31-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-west-3:524387336408:layer:gdal31-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python38-geo",
-                "arn": "arn:aws:lambda:eu-west-3:524387336408:layer:gdal32-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:eu-west-3:524387336408:layer:gdal32-python38-geo:2",
+                "version": 2
             }
         ]
     },
@@ -389,33 +389,33 @@
         "layers": [
             {
                 "name": "gdal24-python37-geo",
-                "arn": "arn:aws:lambda:sa-east-1:524387336408:layer:gdal24-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:sa-east-1:524387336408:layer:gdal24-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python37-geo",
-                "arn": "arn:aws:lambda:sa-east-1:524387336408:layer:gdal31-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:sa-east-1:524387336408:layer:gdal31-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python37-geo",
-                "arn": "arn:aws:lambda:sa-east-1:524387336408:layer:gdal32-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:sa-east-1:524387336408:layer:gdal32-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal24-python38-geo",
-                "arn": "arn:aws:lambda:sa-east-1:524387336408:layer:gdal24-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:sa-east-1:524387336408:layer:gdal24-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python38-geo",
-                "arn": "arn:aws:lambda:sa-east-1:524387336408:layer:gdal31-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:sa-east-1:524387336408:layer:gdal31-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python38-geo",
-                "arn": "arn:aws:lambda:sa-east-1:524387336408:layer:gdal32-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:sa-east-1:524387336408:layer:gdal32-python38-geo:2",
+                "version": 2
             }
         ]
     },
@@ -424,33 +424,33 @@
         "layers": [
             {
                 "name": "gdal24-python37-geo",
-                "arn": "arn:aws:lambda:us-east-1:524387336408:layer:gdal24-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:us-east-1:524387336408:layer:gdal24-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python37-geo",
-                "arn": "arn:aws:lambda:us-east-1:524387336408:layer:gdal31-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:us-east-1:524387336408:layer:gdal31-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python37-geo",
-                "arn": "arn:aws:lambda:us-east-1:524387336408:layer:gdal32-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:us-east-1:524387336408:layer:gdal32-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal24-python38-geo",
-                "arn": "arn:aws:lambda:us-east-1:524387336408:layer:gdal24-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:us-east-1:524387336408:layer:gdal24-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python38-geo",
-                "arn": "arn:aws:lambda:us-east-1:524387336408:layer:gdal31-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:us-east-1:524387336408:layer:gdal31-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python38-geo",
-                "arn": "arn:aws:lambda:us-east-1:524387336408:layer:gdal32-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:us-east-1:524387336408:layer:gdal32-python38-geo:2",
+                "version": 2
             }
         ]
     },
@@ -459,33 +459,33 @@
         "layers": [
             {
                 "name": "gdal24-python37-geo",
-                "arn": "arn:aws:lambda:us-east-2:524387336408:layer:gdal24-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:us-east-2:524387336408:layer:gdal24-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python37-geo",
-                "arn": "arn:aws:lambda:us-east-2:524387336408:layer:gdal31-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:us-east-2:524387336408:layer:gdal31-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python37-geo",
-                "arn": "arn:aws:lambda:us-east-2:524387336408:layer:gdal32-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:us-east-2:524387336408:layer:gdal32-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal24-python38-geo",
-                "arn": "arn:aws:lambda:us-east-2:524387336408:layer:gdal24-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:us-east-2:524387336408:layer:gdal24-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python38-geo",
-                "arn": "arn:aws:lambda:us-east-2:524387336408:layer:gdal31-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:us-east-2:524387336408:layer:gdal31-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python38-geo",
-                "arn": "arn:aws:lambda:us-east-2:524387336408:layer:gdal32-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:us-east-2:524387336408:layer:gdal32-python38-geo:2",
+                "version": 2
             }
         ]
     },
@@ -494,33 +494,33 @@
         "layers": [
             {
                 "name": "gdal24-python37-geo",
-                "arn": "arn:aws:lambda:us-west-1:524387336408:layer:gdal24-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:us-west-1:524387336408:layer:gdal24-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python37-geo",
-                "arn": "arn:aws:lambda:us-west-1:524387336408:layer:gdal31-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:us-west-1:524387336408:layer:gdal31-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python37-geo",
-                "arn": "arn:aws:lambda:us-west-1:524387336408:layer:gdal32-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:us-west-1:524387336408:layer:gdal32-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal24-python38-geo",
-                "arn": "arn:aws:lambda:us-west-1:524387336408:layer:gdal24-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:us-west-1:524387336408:layer:gdal24-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python38-geo",
-                "arn": "arn:aws:lambda:us-west-1:524387336408:layer:gdal31-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:us-west-1:524387336408:layer:gdal31-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python38-geo",
-                "arn": "arn:aws:lambda:us-west-1:524387336408:layer:gdal32-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:us-west-1:524387336408:layer:gdal32-python38-geo:2",
+                "version": 2
             }
         ]
     },
@@ -529,33 +529,33 @@
         "layers": [
             {
                 "name": "gdal24-python37-geo",
-                "arn": "arn:aws:lambda:us-west-2:524387336408:layer:gdal24-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:us-west-2:524387336408:layer:gdal24-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python37-geo",
-                "arn": "arn:aws:lambda:us-west-2:524387336408:layer:gdal31-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:us-west-2:524387336408:layer:gdal31-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python37-geo",
-                "arn": "arn:aws:lambda:us-west-2:524387336408:layer:gdal32-python37-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:us-west-2:524387336408:layer:gdal32-python37-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal24-python38-geo",
-                "arn": "arn:aws:lambda:us-west-2:524387336408:layer:gdal24-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:us-west-2:524387336408:layer:gdal24-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal31-python38-geo",
-                "arn": "arn:aws:lambda:us-west-2:524387336408:layer:gdal31-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:us-west-2:524387336408:layer:gdal31-python38-geo:2",
+                "version": 2
             },
             {
                 "name": "gdal32-python38-geo",
-                "arn": "arn:aws:lambda:us-west-2:524387336408:layer:gdal32-python38-geo:1",
-                "version": 1
+                "arn": "arn:aws:lambda:us-west-2:524387336408:layer:gdal32-python38-geo:2",
+                "version": 2
             }
         ]
     }

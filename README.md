@@ -32,19 +32,17 @@ pyyaml
 
 ```
 
-
-
 ## Available layers
 
-gdal | version | size (Mb)| unzipped size (Mb)| arn
-  ---|      ---|       ---|                ---| ---
-3.2  |        1|      43.8|              138.8| arn:aws:lambda:{REGION}:524387336408:layer:gdal32-python37-geo:1
-3.1  |        1|      43.7|              128.4| arn:aws:lambda:{REGION}:524387336408:layer:gdal31-python37-geo:1
-2.4  |        1|      36.3|              121.3| arn:aws:lambda:{REGION}:524387336408:layer:gdal24-python37-geo:1
-  ---|      ---|       ---|                ---| ---
-3.2  |        1|      44.4|                140| arn:aws:lambda:{REGION}:524387336408:layer:gdal32-python38-geo:1
-3.1  |        1|      44.3|              139.7| arn:aws:lambda:{REGION}:524387336408:layer:gdal31-python38-geo:1
-2.4  |        1|      36.7|                130| arn:aws:lambda:{REGION}:524387336408:layer:gdal24-python38-geo:1
+gdal | size (Mb)| unzipped size (Mb)| arn
+  ---|       ---|                ---| ---
+3.2  |      43.8|              138.8| arn:aws:lambda:{REGION}:524387336408:layer:gdal32-python37-geo:{VERSION}
+3.1  |      43.7|              128.4| arn:aws:lambda:{REGION}:524387336408:layer:gdal31-python37-geo:{VERSION}
+2.4  |      36.3|              121.3| arn:aws:lambda:{REGION}:524387336408:layer:gdal24-python37-geo:{VERSION}
+  ---|       ---|                ---| ---
+3.2  |      44.4|                140| arn:aws:lambda:{REGION}:524387336408:layer:gdal32-python38-geo:{VERSION}
+3.1  |      44.3|              139.7| arn:aws:lambda:{REGION}:524387336408:layer:gdal31-python38-geo:{VERSION}
+2.4  |      36.7|                130| arn:aws:lambda:{REGION}:524387336408:layer:gdal24-python38-geo:{VERSION}
 
 See [full list of ARN](/arns.json)
 

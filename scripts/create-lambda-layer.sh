@@ -14,8 +14,9 @@ rm -rdf $PREFIX/python/boto3* \
 
 echo "Remove useless files"
 rm -rdf $PREFIX/share/doc \
-&& rm -rdf $PREFIX/share/man \
-&& rm -rdf $PREFIX/share/hdf*
+  && rm -rdf $PREFIX/share/man \
+  && rm -rdf $PREFIX/share/hdf*
+
 find $PREFIX/python -type d -a -name 'tests' -print0 | xargs -0 rm -rf
 
 echo "Remove uncompiled python scripts"
@@ -30,6 +31,6 @@ echo "Create archives"
 cd $PREFIX && zip -r9q /tmp/package.zip python
 cd $PREFIX && zip -r9q --symlinks /tmp/package.zip lib/*.so*
 cd $PREFIX && zip -r9q --symlinks /tmp/package.zip share
-cd $PREFIX && zip -r9q --symlinks /tmp/package.zip bin/gdal* bin/ogr* bin/geos* bin/nearblack
+cd $PREFIX && zip -r9q --symlinks /tmp/package.zip bin/gdal* bin/ogr* bin/geos* bin/nearblack bin/postgres bin/pg_* bin/proj*
 
 cp /tmp/package.zip /local/package.zip

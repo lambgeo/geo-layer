@@ -3,7 +3,7 @@ numpy
 pygeos==0.8
 shapely==1.7.1
 rasterio==1.1.8
-pyproj==2.4.1
+pyproj==2.6.1
 
 mercantile==1.1.6
 supermercado==0.2.0

@@ -11,3 +11,4 @@ RUN pip install -r requirements.txt --no-cache-dir --no-binary :all: -t $PREFIX/
 RUN rm requirements.txt
 
 ENV PYTHONPATH=$PYTHONPATH:$PREFIX/python
+ENV PATH=$PREFIX/python/bin:$PATH
